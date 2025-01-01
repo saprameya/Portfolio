@@ -47,11 +47,12 @@ header {
 	color: var(--main-font-clr);
 }
 
+main {
+	height: min-content;
+}
 
-
-.hero{
-    justify-content: space-between;
-    grid-column: span 2;
+.hero {
+	justify-content: space-between;
 }
 
 .hero {
@@ -73,17 +74,20 @@ header {
 
 .about {
 	max-width: 50%;
-
 }
 
-.profile{
-    width: 70%;
-    align-self: start;
-    background-color: var(--main-bkgrnd-clr);
+.profile {
+	width: clamp(370px, 70vw, 70%);
+	min-height: 100vh;
+	/* max-height: 100%; */
+	align-self: start;
+	background-color: var(--main-bkgrnd-clr);
 }
 
 .profile-img {
 	border-radius: 50%;
+	aspect-ratio: 1/1;
+	filter: brightness(0);
 }
 
 .img-wrapper {
@@ -99,7 +103,6 @@ header {
 
 .skills-list {
 	list-style-type: none;
-	
 }
 
 .skills-list li {
@@ -108,7 +111,9 @@ header {
 
 .projects {
 	width: 30%;
-height: clamp(300px, 50vh, 450px);
+	
+height: 100%;
+max-height: 100vh;
 	overflow-y: scroll;
 }
 
@@ -123,5 +128,17 @@ height: clamp(300px, 50vh, 450px);
 footer.flex {
 	background-color: var(--header-bckgrnd-clr);
 	justify-content: space-around;
-    align-self: start;
+	align-self: start;
+}
+
+@media (width < 860px) {
+	.hero {
+		justify-content: center;
+	}
+	.about{
+		min-width: 80%;
+	}
+	.projects{
+		min-width: 80%;
+	}
 }
