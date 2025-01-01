@@ -52,7 +52,7 @@ main {
 }
 
 .hero {
-	justify-content: space-between;
+	justify-content: center;
 }
 
 .hero {
@@ -79,9 +79,9 @@ main {
 .profile {
 	width: clamp(370px, 70vw, 70%);
 	min-height: 100vh;
-	/* max-height: 100%; */
 	align-self: start;
 	background-color: var(--main-bkgrnd-clr);
+	gap: 1rem;
 }
 
 .profile-img {
@@ -91,10 +91,22 @@ main {
 }
 
 .img-wrapper {
+	position: relative;
 	background-color: var(--header-bckgrnd-clr);
 	padding: 0;
 	border-top-right-radius: 50%;
 	border-bottom-right-radius: 50%;
+}
+
+.img-wrapper::before{
+	content: '';
+	position: absolute;
+	top:0;
+	left: 0;
+	transform: translateX(-300px);
+	min-height: 100%;
+	min-width: 100%;
+	background-color: var(--header-bckgrnd-clr);
 }
 
 .skills {
