@@ -115,12 +115,12 @@ main {
 }
 
 .about {
-	max-width: 50%;
+	/* max-width: 50%; */
 }
 
 .profile {
 	width: clamp(370px, 70vw, 70%);
-	min-height: 100vh;
+	height: 100%;
 	align-self: start;
 	background-color: var(--main-bkgrnd-clr);
 	gap: 1rem;
@@ -129,7 +129,9 @@ main {
 .profile-img {
 	border-radius: 50%;
 	aspect-ratio: 1/1;
-	/* filter: brightness(0); */
+	float: left;
+	shape-outside: circle(50%);
+	margin-right: 0.8rem;
 }
 
 .img-wrapper {
@@ -138,6 +140,7 @@ main {
 	padding: 0;
 	border-top-right-radius: 50%;
 	border-bottom-right-radius: 50%;
+
 }
 
 .img-wrapper::before {
