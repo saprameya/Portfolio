@@ -91,10 +91,12 @@ main {
 	width: 70%;
 	width: clamp(800px, 70%, 1000px);
 	align-self: center;
+	
 }
 
 .hero * {
 	padding: 0.8rem;
+	align-self: center;
 }
 
 .hero-content {
@@ -136,6 +138,7 @@ main {
 
 .skills {
 	width: 70%;
+	height: 100%;
 }
 
 .skills-list {
@@ -160,13 +163,14 @@ main {
 .projects h2 {
 	width: 100%;
 	text-align: center;
+	border-bottom: 0.3rem solid var(--header-bckgrnd-clr);
+	margin-bottom: 1rem;
 }
 
 .card {
 	scroll-snap-align: start;
 	margin-inline: 0.5rem;
 	padding-inline: 0.5rem;
-	padding-top: 5rem;
 	padding-bottom: 1.2rem;
 	border: 2px solid var(--header-bckgrnd-clr);
 	border-radius: 0.5rem;
