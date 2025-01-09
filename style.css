@@ -81,20 +81,19 @@ header {
 
 main {
 	background-color: var(--main-bkgrnd-clr);
-	height: clamp(700px, 100vh, 800px);
+	height: clamp(800px, 100vh, 900px);
 	
 }
 
 .hero {
 	
 	height: fit-content;
-	width: 70%;
 	width: clamp(800px, 70%, 1000px);
 	align-self: center;
 	
 }
 
-.hero * {
+.hero  * {
 	padding: 0.8rem;
 	align-self: center;
 }
@@ -137,8 +136,8 @@ main {
 }
 
 .skills {
-	width: 70%;
-	height: 100%;
+	min-width: 70%;
+	/* height: 80%; */
 }
 
 .skills-list {
@@ -146,7 +145,7 @@ main {
 }
 
 .skills-list li {
-	padding: 2ch;
+	padding-inline: 1ch;
 }
 
 .projects {
@@ -204,11 +203,22 @@ main {
 }
 
 footer.flex {
-	position: relative;
 	background-color: var(--header-bckgrnd-clr);
-	justify-content: space-around;
+	justify-content: space-between;
+	padding-inline: 3rem;
+	
+	
 }
 
+footer a {
+	list-style: none;
+}
+
+.disclaimer{
+	max-width: 50%;
+	padding-top: 1rem;
+	
+}
 
 @media (max-width: 1200px){
 	main {
@@ -218,6 +228,17 @@ footer.flex {
 	.projects{
 		width: 100%;
 	}
+
+	footer.flex{
+		justify-content: center;
+		
+	}
+
+	footer > *{
+		padding-inline: 1rem;
+	}
+
+
 }
 
 @media (prefers-color-scheme: dark){
@@ -233,5 +254,7 @@ footer.flex {
 	.card-img-container{
 		background-color: var(--main-bkgrnd-clr);
 	}
+
+	
 }
 
