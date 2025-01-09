@@ -203,11 +203,22 @@ main {
 }
 
 footer.flex {
-	position: relative;
 	background-color: var(--header-bckgrnd-clr);
-	justify-content: space-around;
+	justify-content: space-between;
+	padding-inline: 3rem;
+	
+	
 }
 
+footer a {
+	list-style: none;
+}
+
+.disclaimer{
+	max-width: 50%;
+	padding-top: 1rem;
+	
+}
 
 @media (max-width: 1200px){
 	main {
@@ -217,6 +228,17 @@ footer.flex {
 	.projects{
 		width: 100%;
 	}
+
+	footer.flex{
+		justify-content: center;
+		
+	}
+
+	footer > *{
+		padding-inline: 1rem;
+	}
+
+
 }
 
 @media (prefers-color-scheme: dark){
@@ -232,5 +254,7 @@ footer.flex {
 	.card-img-container{
 		background-color: var(--main-bkgrnd-clr);
 	}
+
+	
 }
 
