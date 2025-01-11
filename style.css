@@ -109,6 +109,8 @@ main {
 }
 
 .profile-img {
+	max-height: 30vw;
+	max-width: 30vw;
 	border-radius: 50%;
 	aspect-ratio: 1/1;
 	float: left;
@@ -206,7 +208,7 @@ footer.flex {
 	background-color: var(--header-bckgrnd-clr);
 	justify-content: space-between;
 	padding-inline: 3rem;
-	
+	padding-bottom: 1rem;
 }
 
 footer > *{
@@ -231,8 +233,12 @@ footer > *{
 
 	footer > *{
 		padding-inline: 1rem;
+		
 		min-width: 80%;
+
 	}
+
+
 
 
 }
