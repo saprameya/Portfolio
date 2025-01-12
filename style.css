@@ -16,7 +16,12 @@ body {
 	--header-bckgrnd-clr: hsl(0 29% 62%);
 	--main-bkgrnd-clr: hsl(0 29% 92%);
 
-	height: 100vh;
+	background-color: var(--main-bkgrnd-clr);
+}
+
+.body-wrapper{
+	max-width: 1280px;
+	margin-inline: auto;
 }
 
 body * a {
@@ -77,30 +82,28 @@ header {
 	color: var(--main-font-clr);
 }
 
-
-
-main {
-	background-color: var(--main-bkgrnd-clr);
-	height: clamp(800px, 100vh, 900px);
+h2{
 	
+	padding-bottom: 1rem;
 }
+
+
 
 .hero {
 	
-	height: fit-content;
 	width: clamp(800px, 70%, 1000px);
 	align-self: center;
-	
+	align-content: center;
+	border-right: 0.3rem solid var(--header-bckgrnd-clr);
 }
 
-.hero  * {
-	padding: 0.8rem;
-	align-self: center;
+.hero > * {
+	padding-block: 10%;
 }
 
 .hero-content {
 	border-bottom: 0.3rem solid var(--header-bckgrnd-clr);
-
+	padding-inline: 1rem;
 }
 
 .profile {
@@ -139,9 +142,8 @@ main {
 
 .skills {
 	min-width: 70%;
-	/* height: 80%; */
+	align-items: center;
 }
-
 .skills-list {
 	list-style-type: none;
 }
@@ -154,25 +156,34 @@ main {
 	width: 30%;
 	position: relative;
 	height: 100%;
-	background-color: var(--header-bckgrnd-clr);
-	overflow-y: scroll;
-	scroll-snap-type: y proximity;
-	scroll-behavior: smooth;
-	scroll-margin: 1rem;
+	background-color: var(--main-bkgrnd-clr);
+	align-items: center;
 }
 
 .projects h2 {
 	width: 100%;
 	text-align: center;
-	border-bottom: 0.3rem solid var(--header-bckgrnd-clr);
+	
+	background-color: var(--main-bkgrnd-clr);
 	margin-bottom: 1rem;
+}
+
+.cards-wrapper{
+	max-height: 100vh;
+	overflow-y: scroll;
+	align-self: center;
+	padding-block: 2rem;
+	scroll-snap-type: y mandatory;
+	scroll-behavior: smooth;
+	
+
 }
 
 .card {
 	scroll-snap-align: start;
 	margin-inline: 0.5rem;
-	padding-inline: 0.5rem;
-	padding-bottom: 1.2rem;
+	padding: 0.5rem;
+	margin-bottom: 2rem;
 	border: 2px solid var(--header-bckgrnd-clr);
 	border-radius: 0.5rem;
 	background-color: var(--main-bkgrnd-clr);
@@ -220,6 +231,10 @@ footer > *{
 @media (max-width: 1200px){
 	main {
 		height: fit-content;
+	}
+
+	.hero{
+		border: none;
 	}
 
 	.projects{
