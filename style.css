@@ -15,7 +15,7 @@ body {
 	--main-font-clr: #000;
 	--header-bckgrnd-clr: hsl(0 29% 62%);
 	--main-bkgrnd-clr: hsl(0 29% 92%);
-	--scrollbar-bkgrnd-clr: hsl(0 29% 32%);
+	/* --scrollbar-bkgrnd-clr: hsl(0 29% 32%); */
 	background-color: var(--main-bkgrnd-clr);
 }
 
@@ -153,8 +153,8 @@ h2 {
 	position: relative;
 	height: 100%;
 	background-color: var(--main-bkgrnd-clr);
-	align-items: center;
-	box-shadow: inset 3px 3px 5px black;
+	align-self: center;
+	/* box-shadow: inset 3px 3px 5px black; */
 }
 
 .projects h2 {
@@ -165,7 +165,25 @@ h2 {
 	margin-bottom: 1rem;
 }
 
-*::-webkit-scrollbar {
+.arrow{
+	min-width: 3rem;
+	aspect-ratio: 2/1.5;
+	background-color: var(--header-bckgrnd-clr);
+	z-index: 100;
+}
+
+#up-arrow{
+	clip-path: polygon(50% 50%, 100% 100%, 0 100%);
+
+}
+
+#down-arrow{
+	
+	clip-path: polygon(0 0, 100% 0, 50% 50%);
+
+}
+
+/* *::-webkit-scrollbar {
 	background: var(--scrollbar-bkgrnd-clr);
 	width: 1rem;
 }
@@ -178,38 +196,42 @@ h2 {
 
 *::-webkit-scrollbar-thumb {
 	border-radius: 100vw;
-}
+} */
 
 /* @supports (scrollbar-color:var(--header-bckgrnd-clr) var(--scrollbar-bkgrnd-clr) ) */
 
-@supports (scrollbar-color: red blue) {
+/* @supports (scrollbar-color: red blue) {
 	* {
 		scrollbar-color: var(--header-bckgrnd-clr) var(--scrollbar-bkgrnd-clr);
 		/* scrollbar-width: thin; */
-	}
-}
+	
 
 .cards-wrapper {
-	max-height: 100vh;
-	overflow-y: scroll;
-	align-self: center;
-	padding-block: 2rem;
-	scroll-snap-type: y mandatory;
-	scroll-behavior: smooth;
+	position: relative;
+	width: 100%;
 }
 
 .card {
-	scroll-snap-align: start;
-	margin-inline: 0.5rem;
+	/* position: absolute; */
+	top:0;
+	left:0;
+	width: 100%;
+	/* margin-inline: 0.5rem; */
 	padding: 0.5rem;
-	margin-bottom: 2rem;
-	border: 2px solid var(--header-bckgrnd-clr);
-	border-radius: 0.5rem;
+	/* margin-bottom: 2rem; */
+	/* border: 2px solid var(--header-bckgrnd-clr); */
+	/* border-radius: 0.5rem; */
 	background-color: var(--main-bkgrnd-clr);
+	
+}
+
+.card.hidden{
+	transform: scale(0);
+	display: none;
 }
 
 .card > * {
-	scroll-snap-align: start;
+	/* scroll-snap-align: start; */
 
 	padding: 1rem;
 }
@@ -264,16 +286,10 @@ footer > * {
 		padding-top: 2rem;
 		width: 100%;
 	}
-	.cards-wrapper{
+	/* .cards-wrapper{
 		max-width: 90%;
-	}
-	@supports (scrollbar-color: red blue) {
-		* {
-			scrollbar-color: var(--header-bckgrnd-clr) var(--scrollbar-bkgrnd-clr);
-			/* scrollbar-color: red blue; */
-			/* scrollbar-width: auto; */
-		}
-	}
+	} */
+	
 
 	footer.flex {
 		justify-content: center;
@@ -298,12 +314,5 @@ footer > * {
 		background-color: var(--main-bkgrnd-clr);
 	}
 
-	@supports (scrollbar-color: red blue) {
-		*::-webkit-scrollbar-track {
-			border-radius: 100vw;
-			margin-block: 0.5em;
-			scrollbar-color: var(--header-bckgrnd-clr) var(--main-bkgrnd-clr);
-			/* scrollbar-width: thin; */
-		}
-	}
+	
 }
