@@ -5,6 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>My Portfolio</title>
 		<link rel="stylesheet" href="style.css" />
+		<script src="script.js" defer></script>
 	</head>
 		<body>
 			<header class="flex"><h1>Sheela Aprameya’s Portfolio</h1></header>
@@ -14,7 +15,7 @@
 						<div class="hero-content">
 							<div class="img-wrapper">
 								<img
-									src="images/Profile.jpg"
+									src="images/Profile.png"
 									alt="profile image"
 									class="profile-img"
 									width="300"
@@ -71,35 +72,39 @@
 						</div>
 					</div>
 					<div class="projects flex">
-						<div class="cards-wrapper flex">
-							<div class="card">
-								<h2>Projects</h2>
-								<div class="card-img-container">
-									<img
-										src="images/MemorableMoments.PNG"
-										class="card-img"
-										alt="Memorable Moments Photography website image"
-									/>
-								</div>
-								<div class="card-body">
-									<p class="card-title">Photography Services Website</p>
-									<p class="card-subtitle">Memorable Moments Photography</p>
-									<p class="card-text">
-										A website created to demonstrate my skills. This website
-										represents a fictional business, and does not represent or endorse
-										the views or products of any existing entity.
-									</p>
-									<button class="project-link-btn">
-										<a
-											href="https://saprameya.github.io/MMPhotography/"
-											target="blank"
-											class="card-link sa-btn"
-											>Visit site</a
-										>
-									</button>
+						<!-- <div class="cards-wrapper flex"> -->
+							<h2>Projects</h2>
+							<div class="arrow" id="up-arrow"></div>
+							<div class="cards-wrapper">
+								<div class="card " id="card1">
+								
+									<div class="card-img-container">
+										<img
+											src="images/MemorableMoments.PNG"
+											class="card-img"
+											alt="Memorable Moments Photography website image"
+										/>
+									</div>
+									<div class="card-body">
+										<p class="card-title">Photography Services Website</p>
+										<p class="card-subtitle">Memorable Moments Photography</p>
+										<p class="card-text">
+											A website created to demonstrate my skills. This website
+											represents a fictional business, and does not represent or endorse
+											the views or products of any existing entity.
+										</p>
+										<button class="project-link-btn">
+											<a
+												href="https://saprameya.github.io/MMPhotography/"
+												target="blank"
+												class="card-link sa-btn"
+												>Visit site</a
+											>
+										</button>
+									</div>
 								</div>
 							</div>
-							<div class="card">
+							<div class="card hidden" id="card2">
 								<div class="card-img-container">
 									<img
 										src="images/CrackTheCode.png"
@@ -124,7 +129,7 @@
 									</button>
 								</div>
 							</div>
-							<div class="card">
+							<div class="card hidden" id="card3">
 								<div class="card-img-container">
 									<img
 										src="images/SweetDreamz.png"
@@ -149,7 +154,9 @@
 									</button>
 								</div>
 							</div>
-						</div>
+							<div class="arrow" id="down-arrow"></div>
+						
+						<!-- </div> -->
 					</div>
 				</main>
 			</div>
