@@ -5,11 +5,17 @@ const card1 = document.querySelector('#card1');
 const card2 = document.querySelector('#card2');
 const card3 = document.querySelector('#card3');
 
-const cardArray = [card1, card2, card3];
+const cardArray = Array.from(document.querySelectorAll('.card'));
 
 var prevCard = cardArray[2];
 var currentCard = cardArray[0];
 var nextCard = cardArray[1];
+
+console.log(prevCard.id);
+console.log(currentCard.id);
+console.log(nextCard.id);
+
+console.log(typeof(cardArray));
 
 down.addEventListener('click', (e) => {
 	showNextCard();
