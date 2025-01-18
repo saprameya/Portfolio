@@ -188,13 +188,26 @@ h2 {
 	width: 100%;
 	padding: 0.5rem;
 	background-color: var(--main-bkgrnd-clr);
-	
+	transition: scale 1s, display 1s allow-discrete;
 }
 
-.card.hidden{
+.hidden {
 	transform: scale(0);
 	display: none;
 }
+
+@starting-style {
+	.hidden {
+		scale: 1;
+	}
+}
+@starting-style {
+	.card {
+		scale: 0;
+	}
+}
+
+
 
 .card > * {
 	padding: 1rem;
