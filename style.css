@@ -188,22 +188,22 @@ h2 {
 	width: 100%;
 	padding: 0.5rem;
 	background-color: var(--main-bkgrnd-clr);
-	transition: scale 1s, display 1s allow-discrete;
+	transition: opacity 3s, display 3s allow-discrete;
 }
 
 .hidden {
-	transform: scale(0);
+	opacity: 0;
 	display: none;
 }
 
 @starting-style {
 	.hidden {
-		scale: 1;
+		opacity: 1;
 	}
 }
 @starting-style {
 	.card {
-		scale: 0;
+		opacity: 0;
 	}
 }
 
