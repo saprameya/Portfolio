@@ -188,7 +188,7 @@ h2 {
 	width: 100%;
 	padding: 0.5rem;
 	background-color: var(--main-bkgrnd-clr);
-	transition: opacity 3s, display 1s allow-discrete;
+	transition: opacity 3s, display 3s allow-discrete;
 }
 
 .hidden {

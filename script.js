@@ -17,7 +17,7 @@ down.addEventListener('click', (e) => {
 
 function showNextCard() {
 	currentCard.classList.toggle('hidden');
-	nextCard.classList.toggle('hidden');
+	setTimeout(nextCard.classList.toggle('hidden'), 3000);
 
 	temp = nextCard;
 	prevCard = currentCard;
@@ -39,7 +39,8 @@ up.addEventListener('click', (e) => {
 
 function showPrevCard() {
 	currentCard.classList.toggle('hidden');
-	prevCard.classList.toggle('hidden');
+	setTimeout(prevCard.classList.toggle('hidden'), 3000);
+
 
 	temp = prevCard;
 	nextCard = currentCard;
