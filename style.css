@@ -164,24 +164,20 @@ h2 {
 	margin-bottom: 1rem;
 }
 
-.arrow{
+.arrow {
 	min-width: 3rem;
 	aspect-ratio: 2/1.5;
 	background-color: var(--header-bckgrnd-clr);
 	z-index: 100;
 }
 
-#up-arrow{
+#up-arrow {
 	clip-path: polygon(50% 50%, 100% 100%, 0 100%);
-
 }
 
-#down-arrow{
-	
+#down-arrow {
 	clip-path: polygon(0 0, 100% 0, 50% 50%);
-
 }
-
 
 .cards-wrapper {
 	position: relative;
@@ -254,7 +250,6 @@ footer > * {
 		padding-top: 2rem;
 		width: 100%;
 	}
-	
 
 	footer.flex {
 		justify-content: center;
@@ -278,6 +273,4 @@ footer > * {
 	.card-img-container {
 		background-color: var(--main-bkgrnd-clr);
 	}
-
-	
 }
