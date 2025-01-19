@@ -50,15 +50,7 @@ button:active {
 	background-color: var(--header-bckgrnd-clr);
 }
 
-.grid {
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-	align-items: center;
-	justify-items: center;
-	margin-inline: auto;
-	gap: 1rem;
-	padding-top: 1rem;
-}
+
 
 .flex {
 	display: flex;
@@ -150,7 +142,6 @@ h2 {
 
 .projects {
 	width: 30%;
-	position: relative;
 	height: 100%;
 	background-color: var(--main-bkgrnd-clr);
 	align-self: center;
@@ -168,7 +159,6 @@ h2 {
 	min-width: 3rem;
 	aspect-ratio: 2/1.5;
 	background-color: var(--header-bckgrnd-clr);
-	z-index: 100;
 }
 
 #up-arrow {
@@ -180,15 +170,15 @@ h2 {
 }
 
 .cards-wrapper {
-	position: relative;
 	width: 100%;
 }
 
 .card {
 	width: 100%;
+	
 	padding: 0.5rem;
 	background-color: var(--main-bkgrnd-clr);
-	transition: opacity 3s, display 1s allow-discrete;
+	transition: opacity 2s, display 1ms allow-discrete;
 }
 
 .hidden {
@@ -263,6 +253,18 @@ footer > * {
 		padding-top: 2rem;
 		width: 100%;
 	}
+
+	.projects h2{
+		margin-bottom: 0;
+		padding-bottom: 0;
+	}
+
+	.card-img-container{
+		max-height: 350px;
+		display: flex;
+		
+	}
+	
 
 	footer.flex {
 		justify-content: center;
