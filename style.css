@@ -178,7 +178,7 @@ h2 {
 	
 	padding: 0.5rem;
 	background-color: var(--main-bkgrnd-clr);
-	transition: opacity 2s, display 1ms allow-discrete;
+	transition: opacity 3s, display 1ms allow-discrete;
 }
 
 .hidden {
@@ -252,6 +252,8 @@ footer > * {
 		box-shadow: inset 2px 2px solid black;
 		padding-top: 2rem;
 		width: 100%;
+		
+		
 	}
 
 	.projects h2{
@@ -259,9 +261,14 @@ footer > * {
 		padding-bottom: 0;
 	}
 
+	.card-title, .card-subtitle{
+		text-align: center;
+	}
+
 	.card-img-container{
-		max-height: 350px;
+		max-height: 340px;
 		display: flex;
+		scale: 0.7 1;
 		
 	}
 	
