@@ -162,6 +162,12 @@ h2 {
 	margin-bottom: 1rem;
 }
 
+.proj-num{
+	text-align: center;
+	width: 100%;
+	color: var(--header-bckgrnd-clr);
+}
+
 .card-text{
 	text-wrap: balance;
 }

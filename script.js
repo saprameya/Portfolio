@@ -5,6 +5,8 @@ const card1 = document.querySelector('#card1');
 const card2 = document.querySelector('#card2');
 const card3 = document.querySelector('#card3');
 
+var projNum = document.querySelector('.proj-num');
+
 const cardArray = Array.from(document.querySelectorAll('.card'));
 
 var prevCard = cardArray[cardArray.length-1];
@@ -13,6 +15,8 @@ var nextCard = cardArray[1];
 
 down.addEventListener('click', (e) => {
 	showNextCard();
+	updateProjNum();
+
 });
 
 function showNextCard() {
@@ -34,6 +38,7 @@ function showNextCard() {
 
 up.addEventListener('click', (e) => {
 	showPrevCard();
+	updateProjNum();
 });
 
 function showPrevCard() {
@@ -53,4 +58,12 @@ function showPrevCard() {
 	}
 
     prevCard = cardArray[index];
+}
+
+function updateProjNum(){
+	const index = cardArray.indexOf(currentCard) +1;
+	const total = cardArray.length;
+	projNum.innerText = `${index}/${total}`;
+
+
 }
