@@ -221,14 +221,10 @@ h2 {
 	.hidden {
 		opacity: 1;
 	}
-}
-@starting-style {
 	.card {
 		opacity: 0;
 	}
 }
-
-
 
 .card > * {
 	padding: 1rem;
