@@ -222,7 +222,8 @@ h2 {
 @starting-style {
 	.hidden {
 		opacity: 1;
-	}	.card {
+	}	
+	.card {
 		opacity: 0;
 	}
 }
