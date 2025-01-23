@@ -9,10 +9,35 @@ var projNum = document.querySelector('.proj-num');
 
 const cardArray = Array.from(document.querySelectorAll('.card'));
 
-var prevCard = cardArray[cardArray.length-1];
-var currentCard = cardArray[0];
-var nextCard = cardArray[1];
+const cardText = Array.from(document.querySelectorAll('.card-text'))
+const cardImgCont = Array.from(document.querySelectorAll('.card-img-container'))
+console.log(cardArray)
+const height = window.innerHeight;
 
+if(height <= 750){
+	cardText.forEach(elem => {
+		elem.classList.add('card-text-hidden');
+	});
+	cardImgCont.forEach(elem => {
+		elem.classList.add('small');
+	});
+}
+
+if (cardArray.length>1) {
+	var prevCard = cardArray[cardArray.length-1];
+	var currentCard = cardArray[0];
+	var nextCard = cardArray[1];
+}else{
+	var prevCard = cardArray[0];
+	var currentCard = cardArray[0];
+	var nextCard = cardArray[0];
+}
+
+console.log(prevCard);
+console.log(currentCard);
+console.log(nextCard);
+
+updateProjNum();
 down.addEventListener('click', (e) => {
 	showNextCard();
 	updateProjNum();
@@ -63,6 +88,7 @@ function showPrevCard() {
 function updateProjNum(){
 	const index = cardArray.indexOf(currentCard) +1;
 	const total = cardArray.length;
+	console.log(`${index}/${total}`)
 	projNum.innerText = `${index}/${total}`;
 
 
