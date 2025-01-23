@@ -15,7 +15,6 @@ body {
 	--main-font-clr: #000;
 	--header-bckgrnd-clr: hsl(0 29% 62%);
 	--main-bkgrnd-clr: hsl(0 29% 92%);
-	/* --scrollbar-bkgrnd-clr: hsl(0 29% 32%); */
 	background-color: var(--main-bkgrnd-clr);
 	
 }
@@ -153,7 +152,6 @@ h2 {
 
 .projects {
 	width: 30%;
-	/* height: 100vh; */
 	background-color: var(--main-bkgrnd-clr);
 	align-self: center;
 	
