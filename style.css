@@ -233,9 +233,7 @@ h2 {
 	padding: 1rem;
 }
 
-.card-img {
-	border-radius: 1rem;
-}
+
 
 .card-img-container {
 	border: 3px solid var(--header-bckgrnd-clr);
