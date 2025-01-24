@@ -69,6 +69,7 @@ body * a:active {
 img {
 	display: block;
 	max-width: 100%;
+	max-height: 300px;
 }
 
 header {
@@ -153,7 +154,7 @@ h2 {
 .projects {
 	width: 30%;
 	background-color: var(--main-bkgrnd-clr);
-	align-self: center;
+	align-self:flex-start;
 	
 
 }
