@@ -16,7 +16,14 @@ body {
 	--header-bckgrnd-clr: hsl(0 29% 62%);
 	--main-bkgrnd-clr: hsl(0 29% 92%);
 	background-color: var(--main-bkgrnd-clr);
-	
+	min-height: 100vh;
+}
+
+.grid{
+	display: grid;
+	grid-template-columns: 3fr 1fr;
+	align-items: center;
+	justify-content: center;
 }
 
 body, body *{
@@ -85,8 +92,7 @@ h2 {
 }
 
 .hero {
-	width: clamp(800px, 70%, 1000px);
-	align-self: center;
+	max-width: calc(100% - 4rem);
 	align-content: center;
 	border-right: 0.3rem solid var(--header-bckgrnd-clr);
 }
@@ -151,10 +157,11 @@ h2 {
 }
 
 .projects {
-	width: 30%;
 	background-color: var(--main-bkgrnd-clr);
-	align-self: center;
-	
+	flex-direction: column;
+	max-width: calc(100% - 4rem);
+	margin: 0 auto;
+	justify-content: space-around;
 
 }
 
@@ -182,25 +189,23 @@ h2 {
 .project-link-btn{
 	width: 60%;
 }
+
+
 .arrow {
-	min-width: 3rem;
-	aspect-ratio: 3/1;
-	background-color: var(--header-bckgrnd-clr);
+	margin: auto;
 	cursor: pointer;
+	
 }
+
+
+
 
 .arrow:hover,
 .arrow:focus-visible{
-	background-color: hsl(from var(--header-bckgrnd-clr)  h s 32%);
+	opacity: 0.6;
 }
 
-#up-arrow {
-	clip-path: polygon(50% 0, 100% 100%, 0 100%);
-}
 
-#down-arrow {
-	clip-path: polygon(0 0, 100% 0, 50% 100%);
-}
 
 .cards-wrapper {
 	width: 100%;
@@ -233,7 +238,9 @@ h2 {
 	padding: 1rem;
 }
 
-
+.card-img{
+	max-width: fit-content;
+}
 
 .card-img-container {
 	border: 3px solid var(--header-bckgrnd-clr);
@@ -268,8 +275,9 @@ footer > * {
 }
 
 @media (max-width: 1200px) {
-	main {
+	.grid {
 		height: fit-content;
+		grid-template-columns: 1fr;
 	}
 
 	.hero {
