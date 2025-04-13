@@ -168,6 +168,9 @@ h2 {
 	
 }
 
+#down-arrow{
+	margin-top:  1rem;
+}
 
 
 
@@ -229,9 +232,7 @@ footer > * {
 		max-width: 100%;
 	}
 
-	#down-arrow{
-		margin-top:  1rem;
-	}
+
 	.cards-wrapper{
 		max-width:90%;
 	}
