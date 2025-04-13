@@ -9,18 +9,9 @@ var projNum = document.querySelector('.proj-num');
 
 const cardArray = Array.from(document.querySelectorAll('.card'));
 
-const cardText = Array.from(document.querySelectorAll('.card-text'))
-const cardImgCont = Array.from(document.querySelectorAll('.card-img-container'))
 const height = window.innerHeight;
 
-if(height <= 750){
-	cardText.forEach(elem => {
-		elem.classList.add('card-text-hidden');
-	});
-	cardImgCont.forEach(elem => {
-		elem.classList.add('small');
-	});
-}
+
 
 if (cardArray.length>1) {
 	var prevCard = cardArray[cardArray.length-1];
