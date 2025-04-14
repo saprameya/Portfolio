@@ -76,7 +76,7 @@ h2 {
 
 .hero-content {
 	border-bottom: 0.3rem solid var(--header-bckgrnd-clr);
-	padding-inline: 1rem;
+	margin-inline: 1rem;
 }
 
 .profile {
@@ -137,13 +137,16 @@ h2 {
 }
 
 .card {
+	flex-direction: column;
 	max-width: 100%;
 	padding: 0.5rem;
 	background-color: var(--main-bkgrnd-clr);
 	transition: opacity 3s, display 1ms allow-discrete;
-	border: 2px solid var(--header-bckgrnd-clr);
+	border: 3px solid var(--header-bckgrnd-clr);
 	border-radius: 0.5rem;
 }
+
+
 
 .card button {
 	width: 60%;
@@ -203,9 +206,7 @@ footer > * {
 		padding-inline: 0.5rem;
 	}
 
-	.flex{
-		flex-direction: column;
-	}
+
 
 	.hero   {
 		max-width: 95%;
