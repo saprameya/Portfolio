@@ -68,9 +68,13 @@ h2 {
 	display: none;
 }
 
+.button{
+	font-family: 'Sour Gummy', serif;	
+}
 .close-button{
 	display: none;
 	width: 10ch;
+	
 }
 
 .hero {
@@ -329,6 +333,10 @@ footer.flex {
 		--main-font-clr: #fff;
 		--header-bckgrnd-clr: #000;
 		--main-bkgrnd-clr: hsl(0 29% 52%);
+	}
+
+	.arrow{
+		filter:brightness(0);
 	}
 
 	.card-img-container {
