@@ -251,7 +251,7 @@ footer.flex {
 }
 
 form{
-	width: max(60%, 300px);
+	width: 60%;
 	margin: auto;
 	
 }
@@ -266,10 +266,13 @@ form input, form textarea{
 	padding: 0.5rem;
 }
 
+
 fieldset{
 	display: flex;
 	flex-direction: column;
 	padding: 2rem;
+	border: 2px solid var(--header-bckgrnd-clr);
+	box-shadow: 2px 2px 5px;
 }
 
 form .button{
@@ -371,6 +374,10 @@ form .button{
 
 	.footer-wrapper > * {
 		max-width: 100%;
+	}
+
+	form{
+		width: 90%;
 	}
 }
 
