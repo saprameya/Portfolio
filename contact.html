@@ -8,17 +8,33 @@
 	</head>
 	<body>
 		<header class="flex"><h1>Sheela Aprameya’s Portfolio</h1></header>
+        <div class="home-link"><a href="index.html">Home</a></div>
         <h2 class="contact-header">Contact me</h2>
-        <form action="">
+        <form action="https://formspree.io/f/xwpljlgw" method="post">
             <fieldset>
                 <label for="fname">First name:</label>
-                <input type="text" name="fname">
+                <input type="text" name="fname" required>
                 <label for="lname" >Last name:</label>
-                <input type="text" name="lname">
+                <input type="text" name="lname" required>
                 <label for="email">Your email:</label>
-                <input type="text" name="email">
+                <input type="text" name="email" required>
                 <label for="message">Message:</label>
                 <textarea name="message"></textarea>
+                <button class="button" type="submit">Submit</button>
             </fieldset>
         </form>
+
+        <footer class="flex">
+			<div class="footer-wrapper">
+				<div class="contact">
+					<a href="contact.html"><strong>Contact me</strong></a>
+						
+				</div>
+				<div class="disclaimer">
+						<strong>Disclaimer:</strong> All featured projects were created for
+						the purpose of demonstrating skills and abilities, and do not
+						represent or endorse any existing businesses or entitiies
+				</div>
+			</div>
+		</footer>
     </body>

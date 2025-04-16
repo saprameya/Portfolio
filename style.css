@@ -236,7 +236,14 @@ footer.flex {
 	font-size: 1.2rem;
 }
 
+.home-link{
+	padding: 2rem;
+}
 
+.home-link a:hover,
+.home-link a:visited{
+	color: var(--header-bckgrnd-clr);
+}
 
 .contact-header{
 	margin: 3rem;
@@ -255,10 +262,19 @@ form *{
 	font-size: 1.5rem;
 }
 
+form input, form textarea{
+	padding: 0.5rem;
+}
+
 fieldset{
 	display: flex;
 	flex-direction: column;
 	padding: 2rem;
+}
+
+form .button{
+	width: 10ch;
+	margin: auto;
 }
 
 @media (max-width: 1200px) {
