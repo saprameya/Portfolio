@@ -69,7 +69,8 @@ h2 {
 }
 
 .button{
-	font-family: 'Sour Gummy', serif;	
+	font-family: 'Sour Gummy', serif;
+	color: var(--main-font-clr);	
 }
 .close-button{
 	display: none;
