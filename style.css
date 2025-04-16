@@ -231,6 +231,36 @@ footer.flex {
 	padding-top: 1rem;
 }
 
+.contact a{
+	text-decoration: underline;
+	font-size: 1.2rem;
+}
+
+
+
+.contact-header{
+	margin: 3rem;
+	text-align: center;
+}
+
+form{
+	width: max(60%, 300px);
+	margin: auto;
+	
+}
+
+form *{
+	margin-bottom: 1rem;
+	border-radius: 5px;
+	font-size: 1.5rem;
+}
+
+fieldset{
+	display: flex;
+	flex-direction: column;
+	padding: 2rem;
+}
+
 @media (max-width: 1200px) {
 	.grid {
 		grid-template-columns: 1fr;
@@ -342,5 +372,9 @@ footer.flex {
 
 	.card-img-container {
 		background-color: var(--main-bkgrnd-clr);
+	}
+
+	.contact a:hover{
+		color: var(--main-bkgrnd-clr);
 	}
 }

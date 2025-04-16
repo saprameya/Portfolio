@@ -11,9 +11,6 @@ const skills = document.querySelector('.skills');
 const up = document.querySelector('#up-arrow');
 const down = document.querySelector('#down-arrow');
 
-const card1 = document.querySelector('#card1');
-const card2 = document.querySelector('#card2');
-const card3 = document.querySelector('#card3');
 
 var projNum = document.querySelector('.proj-num');
 
