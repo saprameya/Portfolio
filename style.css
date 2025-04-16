@@ -64,18 +64,17 @@ h2 {
 	padding-bottom: 1rem;
 }
 
-.hero-mobile{
+.hero-mobile {
 	display: none;
 }
 
-.button{
+.button {
 	font-family: 'Sour Gummy', serif;
-	color: var(--main-font-clr);	
+	color: var(--main-font-clr);
 }
-.close-button{
+.close-button {
 	display: none;
 	width: 10ch;
-	
 }
 
 .hero {
@@ -185,12 +184,12 @@ h2 {
 .button:hover,
 .button:active {
 	background-color: var(--main-bkgrnd-clr);
-	
+
 	box-shadow: inset;
 }
 
 .button:hover,
-.button:active{
+.button:active {
 	color: #000;
 }
 
@@ -231,48 +230,46 @@ footer.flex {
 	padding-top: 1rem;
 }
 
-.contact a{
+.contact a {
 	text-decoration: underline;
 	font-size: 1.2rem;
 }
 
-.home-link{
+.home-link {
 	padding: 2rem;
-	
 }
 
-.home-link a{
+.home-link a {
 	text-decoration: underline;
 }
 
 .home-link a:hover,
-.home-link a:visited{
+.home-link a:visited {
 	color: var(--header-bckgrnd-clr);
 }
 
-.contact-header{
+.contact-header {
 	margin: 3rem;
 	text-align: center;
 }
 
-form{
+form {
 	max-width: 60%;
 	margin: auto;
-	
 }
 
-form *{
+form * {
 	margin-bottom: 1rem;
 	border-radius: 5px;
 	font-size: 1.5rem;
 }
 
-form input, form textarea{
+form input,
+form textarea {
 	padding: 0.5rem;
 }
 
-
-fieldset{
+fieldset {
 	display: flex;
 	flex-direction: column;
 	padding: 2rem;
@@ -280,7 +277,7 @@ fieldset{
 	box-shadow: 2px 2px 5px;
 }
 
-form .button{
+form .button {
 	width: 10ch;
 	margin: auto;
 }
@@ -293,7 +290,7 @@ form .button{
 		padding-inline: 0.5rem;
 	}
 
-	h1{
+	h1 {
 		max-width: 90%;
 		margin-inline: auto;
 		text-align: center;
@@ -306,44 +303,40 @@ form .button{
 		border: none;
 	}
 
-	.hero-mobile{
+	.hero-mobile {
 		display: flex;
 		align-items: center;
 		justify-content: center;
 	}
 
-
-
-	.button-wrapper{
+	.button-wrapper {
 		display: flex;
 		flex-direction: column;
 		width: 20ch;
-		
 	}
 
-	.hero-button{
-		
+	.hero-button {
 		margin: 0.5rem auto;
 	}
 
-
-	.hero-content, .skills{
+	.hero-content,
+	.skills {
 		display: none;
 	}
 
-	.hero-content.show{
+	.hero-content.show {
 		display: block;
 	}
 
-	.skills.show{
+	.skills.show {
 		display: flex;
 	}
 
-	.hero-mobile.hide{
+	.hero-mobile.hide {
 		display: none;
 	}
 
-	.close-button.show{
+	.close-button.show {
 		display: block;
 		margin-top: 1rem;
 		width: 10ch;
@@ -352,7 +345,6 @@ form .button{
 	.about p:not(.lead) {
 		text-indent: 0;
 	}
-
 
 	.skills {
 		border-bottom: 0.3rem solid var(--header-bckgrnd-clr);
@@ -381,8 +373,17 @@ form .button{
 		max-width: 100%;
 	}
 
-	form{
-		max-width: 80vw;
+	form {
+		max-width: 90vw;
+	}
+
+	form input,
+	form textarea {
+		max-width: 100%;
+	}
+
+	fieldset{
+		padding: 0.5rem;
 	}
 }
 
@@ -394,15 +395,15 @@ form .button{
 		--main-bkgrnd-clr: hsl(0 29% 52%);
 	}
 
-	.arrow{
-		filter:brightness(0);
+	.arrow {
+		filter: brightness(0);
 	}
 
 	.card-img-container {
 		background-color: var(--main-bkgrnd-clr);
 	}
 
-	.contact a:hover{
+	.contact a:hover {
 		color: var(--main-bkgrnd-clr);
 	}
 }
