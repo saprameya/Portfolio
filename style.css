@@ -147,7 +147,7 @@ h2 {
 }
 
 .proj-num {
-	color: var(--header-bckgrnd-clr);
+	color: var(--main-font-clr);
 }
 
 .card {
@@ -391,12 +391,16 @@ form .button {
 	body {
 		--main-font-clr: #000;
 		--main-font-clr: #fff;
-		--header-bckgrnd-clr: #000;
-		--main-bkgrnd-clr: hsl(0 29% 52%);
+		--header-bckgrnd-clr: hsl(0, 0%, 20%);
+		--main-bkgrnd-clr: hsl(0 29% 50%);
 	}
 
+/* .proj-num {
+	color: #fff;
+} */
+
 	.arrow {
-		filter: brightness(0);
+		filter: brightness(0.3);
 	}
 
 	.card-img-container {
