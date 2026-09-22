@@ -144,8 +144,9 @@ h2 {
 
 .projects {
   align-self: self-start;
+  justify-self: start;
+  width: 90%;
 }
-
 .projects * {
   max-width: fit-content;
   margin: auto;
@@ -160,7 +161,7 @@ h2 {
   flex-direction: column;
 
   max-width: 100%;
-  padding: 0.5rem;
+  /* padding: 0.5rem; */
   background-color: var(--main-bkgrnd-clr);
   transition:
     opacity 3s,
@@ -172,6 +173,8 @@ h2 {
 .card-img {
   border: 2px solid var(--header-bckgrnd-clr);
   border-radius: 0.5rem;
+  max-height: 30vh;
+  width: 100%;
 }
 
 .card-text {
@@ -291,12 +294,12 @@ form .button {
   margin: auto;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 900px) {
   .grid {
     grid-template-columns: 1fr;
 
     margin: auto;
-    padding-inline: 0.5rem;
+    /* padding-inline: 0.5rem; */
   }
 
   h1 {
@@ -358,6 +361,10 @@ form .button {
   .skills {
     border-bottom: 0.3rem solid var(--header-bckgrnd-clr);
     width: 100%;
+  }
+
+  .projects{
+	justify-self: center;
   }
 
   .card-img {
