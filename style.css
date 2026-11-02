@@ -147,7 +147,7 @@ h2 {
   justify-self: start;
   width: 90%;
 }
-.projects * {
+.projects > * {
   max-width: fit-content;
   margin: auto;
   margin-bottom: 0.5rem;
@@ -159,7 +159,7 @@ h2 {
 
 .card {
   flex-direction: column;
-
+  align-items: center;
   max-width: 100%;
   /* padding: 0.5rem; */
   background-color: var(--main-bkgrnd-clr);
@@ -170,27 +170,39 @@ h2 {
   border-radius: 0.5rem;
 }
 
+.card-img-container{
+  padding-inline: 1rem;
+}
+
 .card-img {
   margin-block-start: 1rem;
   border: 2px solid var(--header-bckgrnd-clr);
   border-radius: 0.5rem;
-  max-height: 30vh;
+  /* max-height: 30vh; */
   width: 100%;
 }
 
 .card-title{
   margin: 0 auto;
+  text-align: center;
 }
 
 .card-subtitle{
   font-weight: 600;
   margin: 0 auto;
+  text-align: center;
   
 }
 
-.card-text {
-  max-width: 80%;
-  text-wrap: pretty;
+.card-text-wrapper {
+  
+  padding-inline: 1rem;
+}
+
+.card-text{
+  max-width: 90%;
+  margin-inline: auto;
+  text-align: center;
 }
 
 .button {
@@ -217,7 +229,7 @@ h2 {
 }
 
 .button.card-link{
-  margin-bottom: 1rem;
+  margin-block: 1rem;
 }
 
 .arrow {
@@ -382,10 +394,6 @@ form .button {
 	justify-self: center;
   }
 
-  .card-img {
-    max-width: 90%;
-    margin-inline: 1rem;
-  }
 
   .cards-wrapper {
     max-width: 60%;
