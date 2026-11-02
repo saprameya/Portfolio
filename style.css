@@ -238,9 +238,6 @@ h2 {
   cursor: pointer;
 }
 
-#down-arrow {
-  margin-top: 1rem;
-}
 
 .arrow:hover,
 .arrow:focus-visible {
