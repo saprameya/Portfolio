@@ -1,214 +1,128 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>My Portfolio</title>
-		<link rel="icon" type="image/x-icon" href="images/favicon.png">
-		<link rel="stylesheet" href="style.css" />
-		<script src="script.js" defer></script>
-	</head>
-	<body>
-		<header class="flex"><h1>Sheela Aprameya’s Portfolio</h1></header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.png" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="flex"><h1>Sheela Aprameya’s Portfolio</h1></header>
 
-			<main class="grid">
-				<div class="hero flex">
-					<div class="hero-mobile ">
-						<img src="images/profile.svg" alt="profile image" class="profile-img" width="500">
-						<div class="button-wrapper">
-							<button class="button hero-button" id="about-btn">About me</button>
-							<button class="button hero-button" id="skills-btn">My skills</button>
-						</div>
+    <main class="grid">
+      <div class="hero flex">
+        <div class="hero-mobile">
+          <img src="images/profile.svg" alt="profile image" class="profile-img" width="500" />
+          <div class="button-wrapper">
+            <button class="button hero-button" id="about-btn">About me</button>
+            <button class="button hero-button" id="skills-btn">My skills</button>
+          </div>
+        </div>
+        <button class="button close-button" id="close-btn">Close</button>
+        <div class="hero-content">
+          <div class="img-wrapper">
+            <img src="images/Profile.png" alt="profile image" class="profile-img" width="300" height="300" />
+          </div>
+          <div class="about">
+            <h2>About Me</h2>
+            <p class="lead">
+              Hello! I’m Sheela Aprameya, a budding web designer and developer with a passion for creating engaging and user-friendly digital experiences. My journey into web development began as a
+              hobby, and I’ve embraced the challenge of transitioning from a homemaker to a dedicated tech enthusiast after raising two wonderful children for 26 years. Though I hold a degree in
+              Architecture, I’ve found my true calling in the world of web design and development. My architectural background has instilled in me a strong sense of aesthetics, precision, and spatial
+              awareness, which I apply to my web projects. As a mostly self-taught learner, I bring an avid curiosity to everything I do, constantly seeking to deepen my knowledge and skills.
+            </p>
+            <p>
+              An avid learner, I thrive on new challenges and enjoy exploring the latest trends and technologies in web design. Being a natural problem solver, I love tackling complex issues, whether
+              it’s debugging code or optimizing user experiences, always striving to find effective solutions. I am dedicated and committed to my craft, pouring my heart and soul into each project. My
+              keen attention to detail ensures that every element of my work is polished and meets high standards of quality. I’m excited to continue my journey in web development, blending creativity
+              with technical expertise, and I look forward to crafting unique digital experiences that make a difference.
+            </p>
+            <p>Thank you for visiting my portfolio!</p>
+          </div>
+        </div>
+        <div class="skills flex">
+          <h2>My skills include:</h2>
+          <ul class="skills-list flex">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>React</li>
+            <li>Astro</li>
+            <li>PHP</li>
+            <li>SQL Server/MySQL</li>
+            <li>Java (object oriented) programming</li>
+            <li>Github</li>
+            <li>Organization</li>
+            <li>Critical thinking</li>
+            <li>Problem solving</li>
+          </ul>
+          <p></p>
+        </div>
+      </div>
+      <div class="projects">
+        <h2>Projects</h2>
+        <div class="proj-num">1/3</div>
+        <div class="arrow" id="up-arrow"><img src="images/up-arrow.png" alt="arrow pointing upwards" width="100" /></div>
+        <div class="cards-wrapper">
+          <div class="card flex">
+            <img src="images/LatherUp.jpg" class="card-img" alt="Lather Up handmade soaps website image" width="500" />
 
-					</div>
-						<button class="button close-button" id="close-btn">Close</button>
-					<div class="hero-content ">
-						<div class="img-wrapper">
-							<img
-								src="images/Profile.png"
-								alt="profile image"
-								class="profile-img"
-								width="300"
-								height="300"
-							/>
-						</div>
+            <div class="card-body">
+              <p class="card-title">Website selling Handmade Soaps</p>
+              <p class="card-subtitle">Lather Up</p>
+              <p class="card-text">A website selling handmade soaps. This website represents a fictional business, and does not represent or endorse the views or products of any existing entity.</p>
+            </div>
+            <a class="button card-link sa-btn" href="https://saprameya.github.io/LatherUp/" target="blank">Visit site</a>
+          </div>
+          <div class="card flex hidden">
+            <img src="images/MemorableMoments.jpg" class="card-img" alt="Memorable Moments Photography website image" width="500" />
 
-						<div class="about ">
-							<h2>About Me</h2>
-							<p class="lead">
-								Hello! I’m Sheela Aprameya, a budding web designer and developer
-								with a passion for creating engaging and user-friendly digital
-								experiences. My journey into web development began as a hobby,
-								and I’ve embraced the challenge of transitioning from a
-								homemaker to a dedicated tech enthusiast after raising two
-								wonderful children for 26 years. Though I hold a degree in
-								Architecture, I’ve found my true calling in the world of web
-								design and development. My architectural background has
-								instilled in me a strong sense of aesthetics, precision, and
-								spatial awareness, which I apply to my web projects. As a mostly
-								self-taught learner, I bring an avid curiosity to everything I
-								do, constantly seeking to deepen my knowledge and skills.
-							</p>
-							<p>
-								An avid learner, I thrive on new challenges and enjoy exploring
-								the latest trends and technologies in web design. Being a
-								natural problem solver, I love tackling complex issues, whether
-								it’s debugging code or optimizing user experiences, always
-								striving to find effective solutions. I am dedicated and
-								committed to my craft, pouring my heart and soul into each
-								project. My keen attention to detail ensures that every element
-								of my work is polished and meets high standards of quality. I’m
-								excited to continue my journey in web development, blending
-								creativity with technical expertise, and I look forward to
-								crafting unique digital experiences that make a difference.
-							</p>
-							<p>Thank you for visiting my portfolio!</p>
-						</div>
-					</div>
-
-					<div class="skills flex">
-
-						<h2>My skills include:</h2>
-						<ul class="skills-list flex">
-							<li>HTML</li>
-							<li>CSS</li>
-							<li>JavaScript</li>
-							<li>React</li>
-							<li>Astro</li>
-							<li>PHP</li>
-							<li>SQL Server/MySQL</li>
-							<li>Java (object oriented) programming</li>
-							<li>Github</li>
-							<li>Organization</li>
-							<li>Critical thinking</li>
-							<li>Problem solving</li>
-						</ul>
-						<p></p>
-					</div>
-				</div>
-				<div class="projects ">
-					<h2>Projects</h2>
-					<div class="proj-num">1/3</div>
-						<div class="arrow" id="up-arrow"><img src="images/up-arrow.png" alt="arrow pointing upwards" width="100"></div>
-					<div class="cards-wrapper">
-						<div class="card flex">
-								<img
-									src="images/LatherUp.jpg"
-									class="card-img"
-									alt="Lather Up handmade soaps website image"
-									width="500"
-									
-								/>
-							
-							<div class="card-body">
-								<p class="card-title">Website selling Handmade Soaps</p>
-								<p class="card-subtitle">Lather Up</p>
-								<p class="card-text">
-									A website selling handmade soaps. This website
-									represents a fictional business, and does not represent or
-									endorse the views or products of any existing entity.
-								</p>
-							</div>
-								<a class = "button card-link sa-btn"
-									href="https://saprameya.github.io/LatherUp/"
-									target="blank"
-									
-									>Visit site</a
-								>
-						</div>
-						<div class="card flex hidden">
-								<img
-									src="images/MemorableMoments.jpg"
-									class="card-img"
-									alt="Memorable Moments Photography website image"
-									width="500"
-									
-								/>
-							
-							<div class="card-body">
-								<p class="card-title">Photography Services Website</p>
-								<p class="card-subtitle">Memorable Moments Photography</p>
-								<p class="card-text">
-									A website created to demonstrate my skills. This website
-									represents a fictional business, and does not represent or
-									endorse the views or products of any existing entity.
-								</p>
-							</div>
-								<a class = "button card-link sa-btn"
-									href="https://saprameya.github.io/MMPhotography/"
-									target="blank"
-									
-									>Visit site</a
-								>
-						</div>
-					<div class="card flex hidden">
-						<div class="card-img-container">
-							<img id="ctc"
-								src="images/CrackTheCode.jpg"
-								class="card-img"
-								alt="Crack The Code Game website image"
-								width="500"
-
-							/>
-						</div>
-						<div class="card-body">
-							<p class="card-title">Logic Based Web Game</p>
-							<p class="card-subtitle">Crack The Code</p>
-							<p class="card-text">
-								A fun logic-based game created using HTML, CSS and JavaScript.
-								Crack a three-digit code based on given clues. 
-							</p>
-						</div>
-							<a
-								href="https://saprameya.github.io/CrackTheCode/"
-								target="blank"
-								class="button card-link sa-btn"
-								>Visit site</a
-							>
-					</div>
-					<div class="card flex hidden">
-						<div class="card-img-container">
-							<img
-								src="images/SweetDreamz.jpg"
-								class="card-img"
-								alt="Sweet Dreamz Bakery Website image"
-								width="500"
-
-							/>
-						</div>
-						<div class="card-body">
-							<p class="card-title">E-commerce Webite</p>
-							<p class="card-subtitle">Sweet Dreamz</p>
-							<p class="card-text">
-								An e-commerce front-end only website created for a Web
-								Technologies class project. The business is fictional. 
-							</p>
-						</div>
-							<a
-								href="https://saprameya.github.io/sweetDreamz/"
-								target="blank"
-								class="button card-link sa-btn"
-								>Visit site</a
-							>
-					</div>
-					<div class="arrow" id="down-arrow"><img src="images/down-arrow.	png" alt="arrow pointing downwards" width="100"></div>
-					</div>
-				</div>
-					
-			</main>
-		</div>
-		<footer class="flex">
-			<div class="footer-wrapper">
-				<div class="contact">
-					<a href="contact.html"><strong>Contact me</strong></a>
-						
-				</div>
-				<div class="disclaimer">
-						<strong>Disclaimer:</strong> All featured projects were created for
-						the purpose of demonstrating skills and abilities, and do not
-						represent or endorse any existing businesses or entitiies
-				</div>
-			</div>
-		</footer>
-	</body>
+            <div class="card-body">
+              <p class="card-title">Photography Services Website</p>
+              <p class="card-subtitle">Memorable Moments Photography</p>
+              <p class="card-text">
+                A website created to demonstrate my skills. This website represents a fictional business, and does not represent or endorse the views or products of any existing entity.
+              </p>
+            </div>
+            <a class="button card-link sa-btn" href="https://saprameya.github.io/MMPhotography/" target="blank">Visit site</a>
+          </div>
+          <div class="card flex hidden">
+            <div class="card-img-container">
+              <img id="ctc" src="images/CrackTheCode.jpg" class="card-img" alt="Crack The Code Game website image" width="500" />
+            </div>
+            <div class="card-body">
+              <p class="card-title">Logic Based Web Game</p>
+              <p class="card-subtitle">Crack The Code</p>
+              <p class="card-text">A fun logic-based game created using HTML, CSS and JavaScript. Crack a three-digit code based on given clues.</p>
+            </div>
+            <a href="https://saprameya.github.io/CrackTheCode/" target="blank" class="button card-link sa-btn">Visit site</a>
+          </div>
+          <div class="card flex hidden">
+            <div class="card-img-container">
+              <img src="images/SweetDreamz.jpg" class="card-img" alt="Sweet Dreamz Bakery Website image" width="500" />
+            </div>
+            <div class="card-body">
+              <p class="card-title">E-commerce Webite</p>
+              <p class="card-subtitle">Sweet Dreamz</p>
+              <p class="card-text">An e-commerce front-end only website created for a Web Technologies class project. The business is fictional.</p>
+            </div>
+            <a href="https://saprameya.github.io/sweetDreamz/" target="blank" class="button card-link sa-btn">Visit site</a>
+          </div>
+        </div>
+        <div class="arrow" id="down-arrow"><img src="images/down-arrow.	png" alt="arrow pointing downwards" width="100" /></div>
+      </div>
+    </main>
+    <footer class="flex">
+      <div class="footer-wrapper">
+        <div class="contact">
+          <a href="contact.html"><strong>Contact me</strong></a>
+        </div>
+        <div class="disclaimer">
+          <strong>Disclaimer:</strong> All featured projects were created for the purpose of demonstrating skills and abilities, and do not represent or endorse any existing businesses or entitiies
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>

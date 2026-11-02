@@ -171,10 +171,21 @@ h2 {
 }
 
 .card-img {
+  margin-block-start: 1rem;
   border: 2px solid var(--header-bckgrnd-clr);
   border-radius: 0.5rem;
   max-height: 30vh;
   width: 100%;
+}
+
+.card-title{
+  margin: 0 auto;
+}
+
+.card-subtitle{
+  font-weight: 600;
+  margin: 0 auto;
+  
 }
 
 .card-text {
@@ -203,6 +214,10 @@ h2 {
 .button:hover,
 .button:active {
   color: #000;
+}
+
+.button.card-link{
+  margin-bottom: 1rem;
 }
 
 .arrow {
@@ -368,7 +383,8 @@ form .button {
   }
 
   .card-img {
-    max-width: 100%;
+    max-width: 90%;
+    margin-inline: 1rem;
   }
 
   .cards-wrapper {
